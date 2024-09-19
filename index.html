@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Portfolio website</title>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar" id="navbar">
+        <img src="assets/Logo.svg" alt="Logo" loading="lazy">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#skills">Hobbies</a></li>
+          <li><a href="#training">Formações</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a class="btn" href="#projects">Projetos</a></li>
+        </ul>
+      </nav>
+      <header id="nav-bar">
+        <img src="assets/Logo.svg" alt="">
+        <div id="nav-button" onclick="openMenu()"></div>
+      </header>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#" onclick="openMenu()">Inicio</a></li>
+          <li><a href="#about" onclick="openMenu()">Sobre mim</a></li>
+          <li><a href="#skills" onclick="openMenu()">Skills</a></li>
+          <li><a href="#skills" onclick="openMenu()">Hobbies</a></li>
+          <li><a href="#training" onclick="openMenu()">Formações</a></li>
+          <li><a class="btn" href="#projects" onclick="openMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="openMenu()">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="form-notification" id="form-notification">Email enviado com sucesso!</div>
+      <section class="hero-content" id="hero-content">
+        <h1>Olá, meu nome é <span>Jailson Lima</span></h1>
+        <h2>Eu sou <span class="auto-input"></span></h2>
+        <p>
+          Meu objetivo é contribuir para projetos que impactem positivamente a vida das pessoas, 
+          utilizando minha criatividade e habilidades técnicas para desenvolver soluções funcionais e elegantes.
+          Estou sempre em busca de novos desafios que me permitam crescer profissionalmente.
+        </p>         
+      </section>
+    </header>
+    <aside class="arrow" id="arrow">
+      <span>
+        <img src="assets/arrow-white.svg" alt="seta" loading="lazy">
+      </span>
+    </aside>
+    <section class="about" id="about">
+      <div class="container-about">
+        <img src="https://avatars.githubusercontent.com/u/104943798?v=4" alt="Foto do usuário" loading="lazy">
+        <article class="about-content">
+          <h1>Sobre mim</h1>
+          <h2>Web <span>Developer</span></h2>
+          <p>
+            Sou um desenvolvedor frontend apaixonado por criar interfaces intuitivas e dinâmicas. 
+            Tenho experiência em tecnologias como HTML, CSS, JavaScript e frameworks como React. 
+            Busco constantemente aprender e aplicar as melhores práticas em design responsivo e acessibilidade 
+            para entregar experiências excepcionais aos usuários.
+          </p>
+          <aside class="about-social">
+            <a href="https://www.linkedin.com/in/jailson-lima-frontend" target="_blank">
+              <img class="icons" src="assets/linkedin.png" alt="Logo linkedin" loading="lazy">
+            </a>
+            <a href="https://github.com/juniorlima36" target="_blank">
+              <img class="icons" src="assets/github-logo.png" alt="Logo github" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icons" src="assets/instagram.png" alt="Logo instagram" loading="lazy">
+            </a>
+            <a href="https://www.twitch.tv/" target="_blank">
+              <img class="icons" src="assets/twitch.png" alt="Logo twitch" loading="lazy">
+            </a>
+          </aside>
+        </article>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <article class="skills-box">
+        <p><img src="assets/html.png" alt="Logo html" loading="lazy">Html 5</p>
+        <p><img src="assets/css.png" alt="Logo css" loading="lazy">CSS</p>
+        <p><img src="assets/js.png" alt="Logo javascript" loading="lazy">Javascript</p>
+        <p><img src="assets/react.png" alt="Logo react" loading="lazy">React</p>
+        <p><img src="assets/node-js.svg" alt="Logo nodejs" loading="lazy">Node JS</p>
+        <p><img src="assets/github.png" alt="Logo github" loading="lazy">GitHub</p>
+      </article>
+      <h2>Hobbies</h2>
+      <article class="skills-box">
+        <p><img src="assets/running.png" alt="Boneco Correndo" loading="lazy">Correr</p>
+        <p><img src="assets/game.png" alt="Controle de videogame" loading="lazy">Games</p>
+        <p><img src="assets/headphone.svg" alt="Fone de ouvido" loading="lazy">Ouvir música</p>
+        <p><img src="assets/tv.png" alt="Tv" loading="lazy">Assistir séries</p>
+        <p><img src="assets/fitness.png" alt="Academia" loading="lazy">Academia</p>
+        <p><img src="assets/concert.png" alt="Show" loading="lazy">Shows</p>
+      </article>
+    </section>
+    <section class="training" id="training">
+      <h2>Formação acadêmica</h2>
+      <article class="training-box">
+        <p>
+          <img src="assets/udemybrasil-logo.jpg" alt="Logo Udemy" loading="lazy">
+          <strong>Formação Algoritmos e Lógica de Programação</strong>
+          2022 - Udemy
+        </p>
+        <p>
+          <img src="assets/santander-logo.png" alt="Logo Santander" loading="lazy">
+          <strong>Formação Bootcamp Fullstack Developer</strong>
+          2022 - Santander
+        </p>
+        <p>
+          <img src="assets/rocketseat-logo.jpg" alt="Logo Rocketseat" loading="lazy">
+          <strong>Formação Discover Fundamentar, Especializar</strong>
+          2023 - Rocketseat
+        </p>
+        <p>
+          <img src="assets/google-logo.jpg" alt="Logo Google" loading="lazy">
+          <strong>Formação Suporte em TI Google, Google UX Design</strong>
+          2023 - Google
+        </p>
+        <p>
+          <img src="assets/dio-logo.png" alt="Logo Dio" loading="lazy">
+          <strong>Formação Bootcamp Fullstack Developer</strong>
+          2023 - Dio
+        </p>
+        <p>
+          <img src="assets/aluracursos-logo.jpg" alt="Logo Alura" loading="lazy">
+          <strong>Formação Oracle Next Education F2 T7</strong>
+          2024 - Alura
+        </p>
+      </article>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projetos Recentes</h2>
+      <div class="container-projects">
+        <article class="project-card">
+          <img src="assets/project1.png" alt="Decodificador" loading="lazy">
+          <h2>Decodificador de texto</h2>
+          <p>
+            Bem-vindo ao projeto de criptografia de texto! Neste projeto, é 
+            possivel fazer a criptografa e descriptografa textos.
+            É possível converter uma palavra para a versão criptografada e 
+            também retornar uma palavra criptografada para a versão original.
+          </p>
+          <a href="https://juniorlima36.github.io/alura-decodificador-de-texto/" target="_blank">Confira</a>
+        </article>
+        <article class="project-card">
+          <img src="assets/project2.png" alt="Pokedex" loading="lazy">
+          <h2>Pokedex</h2>
+          <p>
+            Este projeto é uma Pokédex interativa, onde os usuários podem 
+            buscar informações detalhadas sobre seus Pokémons favoritos. A 
+            Pokédex exibe os dados como nome, número, tipo, habilidades e 
+            uma imagem de cada Pokémon.
+          </p>
+          <a href="https://juniorlima36.github.io/pokedex-dio/" target="_blank">Confira</a>
+        </article>
+        <article class="project-card">
+          <img src="assets/project3.png" alt="GitCard" loading="lazy">
+          <h2>GitHub User Card</h2>
+          <p>
+            Neste projeto insira seu nome de usuário do GitHub e receba um card 
+            personalizado, como avatar, número de repositórios, seguidores, e muito mais. 
+            O card é totalmente personalizável, permitindo ao usuário ajustar cores e estilos.
+          </p>
+          <a href="https://juniorlima36.github.io/RocketCard/" target="_blank">Confira</a>
+        </article>
+      </div>
+		</section>
+    <section class="contact" id="contact">
+      <h2>Contato</h2>
+      <div class="container-contact">
+        <span>
+          <img src="assets/tacha.png" alt="pino de desenho" loading="lazy">
+          <strong>Quer entrar em contato comigo?</strong><br> 
+          Preencha o formulário e entrarei em contato o mais rápido possível.
+        </span>
+        <form class="contact-form" id="contact-form" action="" target="_blank">
+          <p><input type="text" id="name" name="Name" placeholder="Nome" maxlength="50" required></p>
+          <p><input type="email" id="email" name="Email" placeholder="Email" maxlength="50" required></p>
+          <p><input type="text" id="subject" name="Subject" placeholder="Assunto" maxlength="50" required></p>
+          <p><textarea id="message" name="message" placeholder="Digite sua mensagem" maxlength="300" cols="60" rows="10" required></textarea></p>
+          <p><button type="submit"><img src="assets/send.svg" alt="">ENVIAR MENSAGEM</button></p>
+        </form>
+      </div>
+    </section>    
+    <footer>
+      <h2>Alura Challenge - Oracle Next Education</h2>
+      <p>Desenvolvido por <span>JuniorLima36</span></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
